@@ -1,0 +1,19 @@
+.color-scheme {
+  background-color: #ffffff;
+}
+.color-scheme--headers {
+  background-color: #dddddd;
+}
+.color-scheme--accent {
+  background-color: #ff8500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main {
+  min-height: 70vh;
+}/*# sourceMappingURL=Main.module.css.map */

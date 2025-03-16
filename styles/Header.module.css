@@ -1,0 +1,67 @@
+.container__headings {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid gray;
+}
+
+.header {
+  width: 1200px;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 15px;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header a:hover {
+  color: #ff8500;
+}
+.header nav {
+  font-size: 18px;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.header h1 {
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+.header h2 {
+  font-weight: 200;
+  margin: 0;
+}
+.header p {
+  margin: 5px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  background-color: #ff8500;
+  padding: 2px 5px 3px 5px;
+  color: white;
+  font-weight: 300;
+}
+.header .header__socials img {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: gray;
+  border-radius: 100%;
+  padding: 7px;
+}
+.header .header__socials img:nth-child(1) {
+  padding-right: 9px;
+}
+.header .header__socials img:hover {
+  background-color: #ff8500;
+}/*# sourceMappingURL=Header.module.css.map */
