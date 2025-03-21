@@ -1,5 +1,5 @@
 .hero {
-   width: 1506px;
+   position: relative; // scroll-effect-related
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -7,15 +7,21 @@
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 25px;
+   background-color: var(--background-color);
+   margin-top: 75vh; // scroll-effect
+//   z-index: 2; // scroll-effect 
+//    width: 100%; // scroll-effect-related
+
+   &__wrapper {
+      max-width: 1506px;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
 
    h1 {
       font-size: 46px;
-   }
-
-   h2 {}
-   
-   p {
-      
    }
 
    &__first-part {
@@ -32,10 +38,10 @@
       overflow: hidden;
       border-radius: 25px;
       box-shadow: 5px 5px 15px 0 black;
-      transition: scale 0.5s ease-in-out;
+      transition: scale 0.3s ease-out;
 
          &:hover {
-            scale: 1.05;
+            scale: 1.02;
          }
 
       img {

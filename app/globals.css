@@ -6,9 +6,11 @@ body {
   font-size: 18px;
 }
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root {
+  --background-color: #ffffff;
+  --foreground-color: #000000;
+  --accent-color: #ff8500;
+  --headings-color: #dddddd;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +20,7 @@ body {
   }
 }
 
+/*
 html,
 body {
   max-width: 100vw;

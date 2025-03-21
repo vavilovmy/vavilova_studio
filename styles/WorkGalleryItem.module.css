@@ -1,0 +1,56 @@
+.workItem {
+  max-width: 1560px;
+  margin: 0 auto;
+  text-align: center;
+}
+.workItem h1 {
+  font-size: 36px;
+  font-weight: 300;
+}
+.workItem p {
+  display: block;
+  width: 75%;
+  text-align: justify;
+  margin: 0 auto 65px auto;
+  line-height: 26px;
+}
+
+.carousel-gallery {
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+  height: 55vh;
+  margin: 45px auto;
+}
+.carousel-gallery .carousel-gallery__img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.carousel-gallery button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+.carousel-gallery button.button--previous {
+  left: 20px;
+}
+.carousel-gallery button.button--next {
+  right: 20px;
+}/*# sourceMappingURL=WorkGalleryItem.module.css.map */

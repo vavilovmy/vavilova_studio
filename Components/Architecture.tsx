@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Architecure = () => {
   return (
-    <section className={styles.architecture}>
+    <section id="architecture" className={styles.architecture}>
       <div className={styles["architecture__private"]}>
          <img 
             src="/images/private-architecture.jpg"
@@ -12,7 +12,7 @@ const Architecure = () => {
       <div className={styles['architecture__private__text']}>
          <h2>Архитектура</h2>
          <p>Частная</p>
-         <p><Link href="#">подробнее</Link></p>
+         <p><Link href="/private-architecture">подробнее</Link></p>
       </div>
       </div>
       <div className={styles["architecture__public"]}>
@@ -22,7 +22,7 @@ const Architecure = () => {
          <div className={styles['architecture__public__text']}>
          <h2>Архитектура</h2>
          <p>Общественная</p>
-         <p><Link href="#">подробнее</Link></p>
+         <p><Link href="/public-architecture">подробнее</Link></p>
       </div>
       </div>
     </section>

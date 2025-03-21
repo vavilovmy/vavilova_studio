@@ -7,6 +7,7 @@
    margin: 0;
    padding: 0;
    border-bottom: 1px solid gray;
+   z-index: 2;
  }
 
  
@@ -19,10 +20,12 @@
    align-items: center;
    margin: 0;
    padding: 15px;
+   // z-index: 2; // scroll-effect
 
    a {
       text-decoration: none;
       color: black;
+      transition: color 0.2s ease-in;
       &:hover {
          color:#ff8500;
       }
@@ -62,15 +65,20 @@
    }
 
    .header__socials{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       img {
          display: inline-block;
          margin-right: 5px;
          background-color: gray;
          border-radius: 100%;
          padding: 7px;
+         transition: background-color 0.2s ease-in;
    
          &:nth-child(1) {
-            padding-right: 9px;
+            object-position: -1px center;
          }
    
          &:hover {

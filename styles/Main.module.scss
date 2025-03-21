@@ -1,19 +1,9 @@
-.color-scheme {
-   background-color: #ffffff;
-   &--headers {
-     background-color: #dddddd;
-   }
-   &--accent {
-      background-color: #ff8500;
-   }
- 
- }
-
- .container {
-  max-width: 1200px;
-  margin: 0 auto;
+.container {
+  max-width: 1500px;
+  margin: 30 auto;
   text-align: center;
 }
+
  .main {
-  min-height: 70vh;
+  background-color: var(--background-color);
  }

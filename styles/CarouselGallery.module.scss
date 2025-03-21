@@ -2,8 +2,12 @@
    position: relative;
    width: 100%;
    overflow: hidden;
-   max-height: 80vh;
    height: 75vh;
+   position: fixed; // scroll-effect
+   top: 0; // scroll-effect
+   left: 0; // scroll-effect
+   z-index: -1; // scroll-effect
+   
 
    .carousel-gallery__img {
       opacity: 1;
@@ -28,6 +32,8 @@
       border: none;
       top: 50%;
       transform: translateY(-50%);
+      z-index: 5;
+
       &.button--previous {
          left: 20px
       }
@@ -35,6 +41,4 @@
          right: 20px;
       }
    }
-
-   
 }

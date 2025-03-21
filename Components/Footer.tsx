@@ -7,16 +7,18 @@ const Footer = () => {
   return (
    <div className={styles.container__headings}>
    <footer className={styles.footer}>
+      <Link href="/">
       <div>
          <h1>DREAMS</h1>
          <p>студия дизайна и архитектуры</p>
       </div>
+      </Link>
       <nav>
          <ul>
-            <li><Link href="#main">главная</Link></li>
-            <li><Link href="#about">о нас</Link></li>
-            <li><Link href="#">интерьеры</Link></li>
-            <li><Link href="#">архитектура</Link></li>
+            <li><Link href="/#main">главная</Link></li>
+            <li><Link href="/#about">о нас</Link></li>
+            <li><Link href="/#interiors">интерьеры</Link></li>
+            <li><Link href="/#architecture">архитектура</Link></li>
          </ul>
       </nav>
       <div className='logo'>

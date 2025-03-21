@@ -1,5 +1,5 @@
 .hero {
-  width: 1506px;
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -7,6 +7,15 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
+  background-color: var(--background-color);
+  margin-top: 75vh;
+}
+.hero__wrapper {
+  max-width: 1506px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero h1 {
   font-size: 46px;
@@ -24,10 +33,10 @@
   overflow: hidden;
   border-radius: 25px;
   box-shadow: 5px 5px 15px 0 black;
-  transition: scale 0.5s ease-in-out;
+  transition: scale 0.3s ease-out;
 }
 .hero__first-part__image-container:hover {
-  scale: 1.05;
+  scale: 1.02;
 }
 .hero__first-part__image-container img {
   display: block;

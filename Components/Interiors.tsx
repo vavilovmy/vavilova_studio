@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Interiors = () => {
   return (
-    <section className={styles.interiors}>
+    <section id="interiors" className={styles.interiors}>
       <div className={styles["interiors__private"]}>
          <img 
             src="/images/private-interiors.jpg"
@@ -12,7 +12,7 @@ const Interiors = () => {
       <div className={styles['interiors__private__text']}>
          <h2>Интерьеры</h2>
          <p>Частные</p>
-         <p><Link href="#">подробнее</Link></p>
+         <p><Link href="/private-interiors">подробнее</Link></p>
       </div>
       </div>
       <div className={styles["interiors__public"]}>
@@ -22,7 +22,7 @@ const Interiors = () => {
          <div className={styles['interiors__public__text']}>
          <h2>Интерьеры</h2>
          <p>Общественные</p>
-         <p><Link href="#">подробнее</Link></p>
+         <p><Link href="/public-interiors">подробнее</Link></p>
       </div>
       </div>
     </section>

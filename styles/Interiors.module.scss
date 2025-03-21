@@ -1,20 +1,41 @@
+@mixin bottom-shadow {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%; 
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 50%);
+}
+
+@mixin card-text {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 3;
+}
+
 .interiors {
    display: flex;
    justify-content: space-between;
    text-align: center;
-   margin-bottom: 45px;
+   margin-bottom: 25px;
+   gap: 25px;
+   background-color: var(--background-color);
 
    img {
       display: block;
       object-fit: cover;
       object-position: center bottom;
-      width: 48vw;
+      width: 49vw;
       height: 35vh;
       
    }
 
    h2, p, a {
       color: white;
+      line-height: 14px;
    }
 
    h2 {
@@ -24,49 +45,44 @@
    a {
       text-decoration: none;
       border-bottom: 2px solid white;
+      transition: color 0.2s ease-in, border-bottom-color 0.2s ease-in;
+      &:hover {
+         color: var(--accent-color);
+         border-bottom-color: var(--accent-color);
+      }
    }
 
    &__private {
       position: relative;
+      transition: box-shadow 0.2s ease-in-out;
       
       &__text {
-         position: absolute;
-         bottom: 0;
-         left: 50%;
-         transform: translateX(-50%);
-         z-index: 1;
+         @include card-text;
       }
 
       &::after {
-         content: "";
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 50%);
+         @include bottom-shadow;
+      }
+
+      &:hover {
+         box-shadow: 0px 0px 35px var(--accent-color);
       }
    }
 
    &__public {
       position: relative;
+      transition: box-shadow 0.2s ease-in-out;
 
       &__text {
-         position: absolute;
-         bottom: 0;
-         left: 50%;
-         transform: translateX(-50%);
-         z-index: 1;
+         @include card-text;
       }
 
       &::after {
-         content: "";
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 50%);
+         @include bottom-shadow;
+      }
+
+      &:hover {
+         box-shadow: 0px 0px 35px var(--accent-color);
       }
    }
 }
