@@ -18,17 +18,21 @@
 
 .architecture {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    text-align: center;
-   margin-bottom: 50px;
+   
    gap: 25px;
+   max-width: 1500px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 10px;
    
    img {
       display: block;
       object-fit: cover;
       object-position: center center;
-      width: 49vw;
-      height: 35vh;   
+      width: 750px;
+      height: 515px;   
    }
 
    h2, p, a {
@@ -54,6 +58,7 @@
    &__private {
       position: relative;
       transition: box-shadow 0.2s ease-in-out;
+      margin-bottom: 50px;
       
       &__text {
          @include card-text;
@@ -71,6 +76,7 @@
    &__public {
       position: relative;
       transition: box-shadow 0.2s ease-in-out;
+      margin-bottom: 50px;
 
       &__text {
          @include card-text;
@@ -84,4 +90,34 @@
          box-shadow: 0px 0px 35px var(--accent-color);
       }
    }
+}
+
+@media screen and (max-width: 1536px) {
+   .architecture {
+      img {
+         width: 580px;
+         height: 425px;
+      }
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .architecture {
+      flex-direction: column;
+      align-items: center;
+      img {
+         width: 95vw;
+         height: 405px;
+      }
+      &__private {
+         width: 95vw;
+         height: 405px;
+         margin-bottom: 0;
+      }
+      &__public {
+         width: 95vw;
+         height: 405px;
+      }
+   } 
+   
 }

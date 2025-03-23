@@ -1,17 +1,37 @@
 .workItem {
    max-width: 1560px;
    margin: 0 auto;
-   text-align: center;
+   text-align: justify;
    h1 {
-      font-size: 36px;
+      font-size: 46px;
       font-weight: 300;
+      margin-bottom: 10px;
+      text-align: center;
    }
    p {
       display: block;
       width: 75%;
-      text-align: justify;
+      // text-align: justify;
       margin: 0 auto 65px auto;
       line-height: 26px;
+   }
+
+   .workGallery__item__location {
+      display: flex;
+      justify-content: center;
+      max-width: 200px;
+      margin: 0 auto;
+      max-height: 30px;
+      
+      img {
+         width: 25px;
+         height: 25px;
+         display: block;
+      }
+
+      p {
+         margin-left: 10px;
+      }
    }
 }
 
@@ -21,10 +41,7 @@
    overflow: hidden;
    height: 55vh;
    margin: 45px auto;
-   // position: fixed; // scroll-effect
-   // top: 0; // scroll-effect
-   // left: 0; // scroll-effect
-   // z-index: 1; // scroll-effect
+   
    
 
    .carousel-gallery__img {
@@ -41,7 +58,7 @@
 
    button {
       position: absolute;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.4);
       color: #fff;
       cursor: pointer;
       width: 40px;
@@ -50,15 +67,26 @@
       border: none;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 5;
 
       &.button--previous {
-         left: 20px
+         left: 10px
       }
       &.button--next {
-         right: 20px;
+         right: 10px;
       }
    }
 
    
+}
+
+@media screen and (max-width: 1200px) {
+   .carousel-gallery {
+      width: 100%;
+      height: 45vh;
+      margin: 0;
+      margin: 15px 0;
+   }
+   .workItem {
+      text-align: left;
+   }
 }

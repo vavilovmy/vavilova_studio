@@ -2,6 +2,8 @@ import React from 'react'
 import { privateArchitecture } from '@/data'
 import styles from "../styles/WorkGallery.module.css"
 import Link from 'next/link'
+import Image from "next/image";
+
 // 408 x 306
 
 const WorkGallery = ({ title }: { title: string }) => {
@@ -12,6 +14,7 @@ const WorkGallery = ({ title }: { title: string }) => {
       <h1>
          {title}
       </h1>
+      
     <div className={styles.galleryWrapper}>
       {items.map((item) => (
          

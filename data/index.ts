@@ -8,7 +8,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+      location: "Златоуст",
+      date: "2017"
    }, 
    {
       id: 2,
@@ -19,7 +21,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+      location: "Златоуст",
+      date: "2017"
    }, {
       id: 3,
       title: "Особняк в Златоусте",
@@ -29,7 +33,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, {
       id: 4,
       title: "Особняк в Златоусте",
@@ -39,7 +45,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, {
       id: 5,
       title: "Особняк в Златоусте",
@@ -49,7 +57,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, {
       id: 6,
       title: "Особняк в Златоусте",
@@ -59,7 +69,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 7,
@@ -70,7 +82,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 8,
@@ -81,7 +95,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 9,
@@ -92,7 +108,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 10,
@@ -103,7 +121,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 11,
@@ -114,7 +134,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 12,
@@ -125,7 +147,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 13,
@@ -136,7 +160,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 14,
@@ -147,7 +173,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 15,
@@ -158,7 +186,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 16,
@@ -169,7 +199,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 17,
@@ -180,7 +212,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 18,
@@ -191,7 +225,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 19,
@@ -202,7 +238,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 20,
@@ -213,7 +251,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 21,
@@ -224,7 +264,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 22,
@@ -235,7 +277,9 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }, 
    {
       id: 23,
@@ -246,6 +290,8 @@ export const privateArchitecture = [
          "/images/architecture/private/zlatoust-mansion/mansion1.jpg","/images/architecture/private/zlatoust-mansion/mansion2.jpg","/images/architecture/private/zlatoust-mansion/mansion3.jpg","/images/architecture/private/zlatoust-mansion/mansion4.jpg","/images/architecture/private/zlatoust-mansion/mansion5.jpg","/images/architecture/private/zlatoust-mansion/mansion6.jpg","/images/architecture/private/zlatoust-mansion/mansion7.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion8.jpg",
          "/images/architecture/private/zlatoust-mansion/mansion9.jpg"
-               ]
+               ],
+               location: "Златоуст",
+               date: "2017"
    }
 ]

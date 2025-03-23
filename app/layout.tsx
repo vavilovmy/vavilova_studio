@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Jura } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const inter = Inter({
-  variable: "--font-inter",
+const jura = Jura({
+  variable: "--font-jura",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "dreams dev",
-  description: "dreams dev",
+  title: "Ольга Вавилова",
+  description: "Архитектор и дизайнер из Челябинска",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     
     <html lang="ru">
-      <body className={`${inter.variable} white`}>
+      <body className={`${jura.variable} white`}>
         <Header />
           {children}
        <Footer />

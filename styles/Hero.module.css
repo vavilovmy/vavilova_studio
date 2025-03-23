@@ -1,14 +1,8 @@
 .hero {
   position: relative;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 25px;
   background-color: var(--background-color);
-  margin-top: 75vh;
 }
 .hero__wrapper {
   max-width: 1506px;
@@ -16,6 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero h1 {
   font-size: 46px;
@@ -31,7 +27,6 @@
 }
 .hero__first-part__image-container {
   overflow: hidden;
-  border-radius: 25px;
   box-shadow: 5px 5px 15px 0 black;
   transition: scale 0.3s ease-out;
 }
@@ -46,6 +41,24 @@
      object-fit: cover;
 }
 .hero__second-part {
-  width: 1200px;
+  max-width: 1200px;
   text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__first-part {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  .hero__first-part__text-container {
+    text-align: left;
+  }
+  .hero {
+    margin-top: 0;
+  }
+  .hero__second-part {
+    max-width: 600px;
+    text-align: left;
+  }
 }/*# sourceMappingURL=Hero.module.css.map */

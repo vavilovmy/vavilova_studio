@@ -3,11 +3,12 @@
 import React from 'react'
 import styles from "../styles/WorkGalleryItem.module.css"
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 const WorkGalleryItem = ({
-    title, content, images 
+    title, content, images, location, date 
    }: { 
-      title: string; content: string; images: string[];
+      title: string; content: string; images: string[]; location: string; date: string;
    }) => {
    // const images = privateArchitecture[0].images;
    const [currentIndex, setCurrentIndex] = useState(0)
@@ -32,6 +33,17 @@ const WorkGalleryItem = ({
   return (
    <section className={styles.workItem}>
       <h1>{title}</h1>
+      <div className={styles.workGallery__item__location}>
+            <Image 
+            src="/icons/location-black.svg"
+            alt="location marker"
+            width={25}
+            height={25}
+            />
+            <p>
+               {location}, {date}
+            </p>
+            </div>
     <div className={styles["carousel-gallery"]}>
       {images.map((image, index) => ( 
          <img 

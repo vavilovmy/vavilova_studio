@@ -1,31 +1,73 @@
+"use client"
+
 import React from 'react'
 import styles from "../styles/Header.module.css"
 import Link from 'next/link'
+import Image from 'next/image'
+import { useState, useEffect } from 'react'
 
 const Header = () => {
+
+   const [activeBurger, setActiveBurger] = useState(false);
+   const handleBurgerClick = () => 
+   {
+      setActiveBurger(!activeBurger);
+   }
+
+   const [isVisible, setIsVisible] = useState(false);
+  let scrollThreshold = 50;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(window.scrollY >= scrollThreshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className={styles.container__headings}>
-      <header className={styles.header}>
+      <header id="main" className={styles.header}>
+         <div 
+         className={styles.header__burger}
+         style={
+            {opacity: isVisible ? 1 : 0 }
+         }
+         onClick={handleBurgerClick}
+         >
+            {/* <Image src="/icons/burger-menu.svg" width={65} height={65} alt='burger-menu'/>
+            <div className={styles.header__burger__background}></div> */}
+            <div className={styles.header__burger__bar}></div>
+            <div className={styles.header__burger__bar}></div>
+            <div className={styles.header__burger__bar}></div>
+         </div>
       <Link href="/">
       <div>
-         <h1>DREAMS</h1>
-         <p>студия дизайна и архитектуры</p>
+         <h1>ОЛЬГА ВАВИЛОВА</h1>
+         <p>архитектор</p>
       </div>
       </Link>
-         <nav>
-            <ul>
+         <nav className={styles["header__nav--desktop"]}>
+         <ul>
             <li><Link href="/#main">главная</Link></li>
-            <li><Link href="/#about">о нас</Link></li>
+            <li><Link href="/#about">обо мне</Link></li>
             <li><Link href="/#interiors">интерьеры</Link></li>
             <li><Link href="/#architecture">архитектура</Link></li>
             </ul>
          </nav>
-         <div className='logo'>
-            <img/>
-         </div>
-      <div className={styles.header__socials}>
+         <nav className={styles["header__nav--mobile"]} style={{transform: `translateX(${activeBurger ? 0 : `-110%`})`}}>
+            <ul>
+            <li><Link href="/#main">главная</Link></li>
+            <li><Link href="/#about">обо мне</Link></li>
+            <li><Link href="/#interiors">интерьеры</Link></li>
+            <li><Link href="/#architecture">архитектура</Link></li>
+            </ul>
+         </nav>
+      <div className={styles.header__socials}
+       style={{transform: `translateX(${activeBurger ? 0 : `-110%`})`}}>
          <h2 className='tel'>8 (963) 463-30-30</h2>
-         <div className='socials'>
+         <div className={styles.header__socials__images}>
             <Link href="#">
          <img width="25px" height="25px" src="/icons/telegram.svg" alt="" />
             </Link>

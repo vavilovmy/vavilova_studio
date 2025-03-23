@@ -2,12 +2,7 @@
    position: relative;
    width: 100%;
    overflow: hidden;
-   height: 75vh;
-   position: fixed; // scroll-effect
-   top: 0; // scroll-effect
-   left: 0; // scroll-effect
-   z-index: -1; // scroll-effect
-   
+   height: 90vh;
 
    .carousel-gallery__img {
       opacity: 1;
@@ -15,7 +10,7 @@
       height: 100%;
       transition: opacity 0.5s ease-in-out;
       object-fit: cover;
-      object-position: center bottom;
+      object-position: center center;
       position: absolute;
       top: 0;
       left: 0;
@@ -32,7 +27,6 @@
       border: none;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 5;
 
       &.button--previous {
          left: 20px
@@ -42,3 +36,21 @@
       }
    }
 }
+
+@media screen and (max-width: 1200px) {
+   .carousel-gallery {
+      height: 70vh;
+   }
+}
+
+// @media screen and (min-width: 1200px) {
+//    .carousel-gallery {
+//       position: fixed; // scroll-effect
+//       top: 0; // scroll-effect
+//       left: 0; // scroll-effect
+//       z-index: -1; // scroll-effect
+//       button {
+//          display: none;
+//       }
+//    }
+// }

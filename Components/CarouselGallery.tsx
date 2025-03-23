@@ -8,7 +8,10 @@ const CarouselGallery = () => {
    const images = [
       "/images/carousel1.jpg",
       "/images/carousel2.jpg",
-      "/images/carousel3.jpg"
+      "/images/carousel3.jpg",
+      "/images/carousel4.jpg",
+      "/images/carousel5.jpg",
+      "/images/carousel6.jpg"
    ]
 
    const [currentIndex, setCurrentIndex] = useState(0)
@@ -31,7 +34,7 @@ const CarouselGallery = () => {
     };
 
   return (
-   <section id="main">
+   <section>
     <div className={styles["carousel-gallery"]}>
       {images.map((image, index) => ( 
          <img 
