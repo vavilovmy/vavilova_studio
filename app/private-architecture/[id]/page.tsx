@@ -4,29 +4,47 @@ import { notFound } from 'next/navigation'
 import styles from "../../../styles/WorkGalleryItem.module.css"
 import WorkGalleryItem from '@/components/WorkGalleryItem'
 
-// export async function generateStaticParams() {
-//   return privateArchitecture.map((item) => ({id: String(item.id)}))
-// }
+// Используем getStaticPaths для динамической генерации путей
+export async function getStaticPaths() {
+  const paths = privateArchitecture.map((item) => ({
+    params: { id: String(item.id) },
+  }));
 
-const page = ({params}: {params: {id: string}}) => {
-  const post = privateArchitecture.find((p) => p.id === Number(params.id))
-  const title = privateArchitecture[Number(params.id) - 1].title
-  const content = privateArchitecture[Number(params.id) - 1].content
-  const images = privateArchitecture[Number(params.id) - 1].images
-  const location = privateArchitecture[Number(params.id) - 1].location
-  const date = privateArchitecture[Number(params.id) - 1].date
-  
+  return {
+    paths,
+    fallback: false, // можно использовать true или 'blocking', если необходимо для других вариантов
+  };
+}
+
+// Используем getStaticProps для получения данных по id
+export async function getStaticProps({ params }: { params: { id: string } }) {
+  const post = privateArchitecture.find((p) => p.id === Number(params.id));
+
   if (!post) {
-    return notFound();
+    return { notFound: true };
   }
+
+  return {
+    props: {
+      post, // передаем весь пост, а не отдельные поля
+    },
+  };
+}
+
+const Page = ({ post }: { post: typeof privateArchitecture[0] }) => {
+  if (!post) {
+    return notFound(); // если пост не найден, показываем 404
+  }
+
+  const { title, content, images, location, date } = post;
 
   return (
     <main>
       <section className={styles.workItemBox}>
-         <WorkGalleryItem title={title} content={content} images={images} location={location} date={date}/>
+         <WorkGalleryItem title={title} content={content} images={images} location={location} date={date} />
       </section>
     </main>
-  )
+  );
 }
 
-export default page
+export default Page;
