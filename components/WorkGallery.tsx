@@ -2,7 +2,6 @@ import React from 'react'
 import { privateArchitecture } from '@/data'
 import styles from "../styles/WorkGallery.module.css"
 import Link from 'next/link'
-import Image from "next/image";
 
 // 408 x 306
 
