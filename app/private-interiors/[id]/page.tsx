@@ -4,9 +4,9 @@ import { notFound } from 'next/navigation'
 import styles from "../../../styles/WorkGalleryItem.module.css"
 import WorkGalleryItem from '@/components/WorkGalleryItem'
 
-export async function generateStaticParams() {
-  return privateArchitecture.map((item) => ({id: String(item.id)}))
-}
+// export async function generateStaticParams() {
+//   return privateArchitecture.map((item) => ({id: String(item.id)}))
+// }
 
 const page = ({params}: {params: {id: string}}) => {
   const post = privateArchitecture.find((p) => p.id === Number(params.id))
