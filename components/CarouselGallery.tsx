@@ -22,7 +22,7 @@ const CarouselGallery = () => {
       }, 5000);
   
       return () => clearInterval(intervalId);
-    }, [currentIndex]);
+    }, []);
 
     const goToNext = () => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);

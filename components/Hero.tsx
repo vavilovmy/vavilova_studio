@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../styles/Hero.module.css"
 
+
 const Hero = () => {
   return (
     <section id="about" className={styles.hero}>
@@ -22,6 +23,7 @@ const Hero = () => {
       </div>
       <div  className={styles["hero__first-part__image-container"]}>
       <img 
+      alt="portrait"
       src='/images/portrait.jpg'
       />
       </div>

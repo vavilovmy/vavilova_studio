@@ -2,11 +2,13 @@ import React from 'react'
 import styles from "../styles/Interiors.module.css"
 import Link from 'next/link'
 
+
 const Interiors = () => {
   return (
     <section id="interiors" className={styles.interiors}>
       <div className={styles["interiors__private"]}>
          <img 
+            alt="privInt"
             src="/images/private-interiors.jpg"
          />
       <div className={styles['interiors__private__text']}>
@@ -16,7 +18,8 @@ const Interiors = () => {
       </div>
       </div>
       <div className={styles["interiors__public"]}>
-         <img 
+         <img
+            alt="pubInt" 
             src="/images/public-interiors.jpg"
          />
          <div className={styles['interiors__public__text']}>

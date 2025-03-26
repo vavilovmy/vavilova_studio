@@ -2,7 +2,6 @@ import React from 'react'
 import { privateArchitecture } from '@/data'
 import { notFound } from 'next/navigation'
 import styles from "../../../styles/WorkGalleryItem.module.css"
-import Link from 'next/link'
 import WorkGalleryItem from '@/components/WorkGalleryItem'
 
 export async function generateStaticParams() {
