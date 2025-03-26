@@ -45,8 +45,8 @@
   transition: opacity 0.5s ease-in-out;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center bottom;
-     object-position: center bottom;
+  -o-object-position: center center;
+     object-position: center center;
   position: absolute;
   top: 0;
   left: 0;
