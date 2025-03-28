@@ -5,8 +5,39 @@ import Link from 'next/link'
 
 // 408 x 306
 
-const WorkGallery = ({ title }: { title: string }) => {
+export default async function WorkGalleryNew(
+   { title, route }: 
+   { title: string; route: string }
+) {
+   const res = await fetch(
+      `${process.env.WP_API_URL}/${route}?&acf_format=standard&_fields=id,title,acf,slug`
+   );
+   const data = await res.json();
+   console.log(data)
+   
    const items = privateArchitecture;
+
+   type ResponseData = {
+      id: number;
+      slug: string;
+      title: { rendered: string };
+      acf: {
+         content: string;
+         year: string;
+         location: string;
+         previewImg: string;
+         img1: string;
+         img2: string;
+         img3: string;
+         img4: string;
+         img5: string;
+         img6: string;
+         img7: string;
+         img8: string;
+         img9: string;
+         img10: string;
+      }
+   }
 
   return (
    <section className={styles.workGallery}>
@@ -15,16 +46,17 @@ const WorkGallery = ({ title }: { title: string }) => {
       </h1>
       
     <div className={styles.galleryWrapper}>
-      {items.map((item) => (
-         
-         <div key={item.id} className={`${styles["workGallery__item"]} ${item.id === (Math.ceil(items.length / 3) + 1) ? styles["workGallery__item--small"] : ""}`.trim()}>
+      {data.map((item: ResponseData) => (
+         <div key={item.id} 
+         className={`${styles["workGallery__item"]}`}>
             <img 
-               src={item.previewImg}
-               alt={item.title}
+               src={item.acf.previewImg}
+               alt={item.title.rendered}
             />
             <div className={styles.workGallery__item__textbox}>
-               <h2>{item.title}</h2>
-               <p><Link href={`/private-architecture/${item.id}`}>подробнее</Link></p>
+               <h2>{item.title.rendered}</h2>
+               {/* ЗДЕСЬ ДОБАВИТЬ ВМЕСТО TEST ${route} ДЛЯ МАРШРУТИЗАЦИИ */}
+               <p><Link href={`/${route}/${item.slug}`}>подробнее</Link></p> 
             </div>
          </div>
         
@@ -33,5 +65,3 @@ const WorkGallery = ({ title }: { title: string }) => {
    </section>
   )
 }
-
-export default WorkGallery

@@ -6,8 +6,7 @@
    text-align: center;
    
    h1 {
-      font-weight: 300;
-      
+      font-weight: 300;  
    }
 }
 
@@ -26,7 +25,7 @@
 
 .workGallery__item { 
    position: relative;
-   transition: transform 0.2s ease-in;
+   transition: box-shadow 0.2s ease-in;
    max-width: 490px;
    max-height: 400px;
    overflow: hidden;
@@ -50,6 +49,7 @@
       font-size: 20px;
       color: var(--foreground);
       transform: translateY(10px);
+      width: 350px;
    }
 
    a {
@@ -83,6 +83,6 @@
    }
 
    &:hover {
-      transform: scale(1.01);
+      box-shadow: 0px 0px 35px var(--accent-color);
    }
 }

@@ -1,4 +1,4 @@
-import WorkGallery from "@/components/WorkGallery";
+import WorkGallery from "@/components/WorkGalleryOld";
 import styles from "../../styles/Main.module.css"
 
 export default function Home() {
