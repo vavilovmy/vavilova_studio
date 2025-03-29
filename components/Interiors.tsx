@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from "../styles/Interiors.module.css"
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Interiors = () => {
   return (
     <section id="interiors" className={styles.interiors}>
       <div className={styles["interiors__private"]}>
-         <img 
+         <Image
+            width={1000}
+            height={1000} 
             alt="privInt"
             src="/images/private-interiors.jpg"
          />
@@ -18,7 +21,9 @@ const Interiors = () => {
       </div>
       </div>
       <div className={styles["interiors__public"]}>
-         <img
+         <Image
+            width={1000}
+            height={1000}
             alt="pubInt" 
             src="/images/public-interiors.jpg"
          />

@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from "../styles/Architecure.module.css"
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Architecure = () => {
   return (
     <section id="architecture" className={styles.architecture}>
       <div className={styles["architecture__private"]}>
-         <img
+         <Image
+            width={1000}
+            height={1000}
             alt='privArch'
             src="/images/private-architecture.jpg"
          />
@@ -18,7 +21,9 @@ const Architecure = () => {
       </div>
       </div>
       <div className={styles["architecture__public"]}>
-         <img
+         <Image
+            width={1000}
+            height={1000}
             alt='pubArch'
             src="/images/public-architecture.jpg"
          />

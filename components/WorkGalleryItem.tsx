@@ -19,7 +19,7 @@ const WorkGalleryItem = ({
       }, 5000);
   
       return () => clearInterval(intervalId);
-    }, [currentIndex]);
+    }, [images.length]);
 
     const goToNext = () => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);

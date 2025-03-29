@@ -8,7 +8,7 @@ const CarouselGallery = () => {
    const images = [
       "/images/carousel1.jpg",
       "/images/carousel2.jpg",
-      "/images/carousel3.jpg",
+      "/images/carousel3.JPG",
       "/images/carousel4.jpg",
       "/images/carousel5.jpg",
       "/images/carousel6.jpg"
@@ -22,7 +22,7 @@ const CarouselGallery = () => {
       }, 5000);
   
       return () => clearInterval(intervalId);
-    }, []);
+    }, [images.length]);
 
     const goToNext = () => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);

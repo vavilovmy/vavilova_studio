@@ -4,6 +4,7 @@ import React from 'react'
 import styles from "../styles/Header.module.css"
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 const Header = () => {
 
@@ -68,13 +69,13 @@ const Header = () => {
          <h2 className='tel'>8 (963) 463-30-30</h2>
          <div className={styles.header__socials__images}>
             <Link href="#">
-         <img width="25px" height="25px" src="/icons/telegram.svg" alt="" />
+              <Image width={25} height={25} src="/icons/telegram.svg" alt="" />
             </Link>
             <Link href="https://www.instagram.com/vavilovastudio?igsh=MWVjdHB4aWVyb2o0OA%3D%3D&utm_source=qr ">   
-         <img width="25px" height="25px" src="/icons/insta.svg" alt="" />
+                <Image width={25} height={25} src="/icons/insta.svg" alt="" />
             </Link>
             <Link href="https://www.houzz.ru/professionaly/arhitektory/studiya-dizayna-i-arhitektury-olygi-vavilovoy-pfvwru-pf~1327143032?" target='_blank'>    
-         <img width="25px" height="25px" src="/icons/houzz.svg" alt="" />
+              <Image width={25} height={25} src="/icons/houzz.svg" alt="" />
             </Link>
          </div>
       </div>
