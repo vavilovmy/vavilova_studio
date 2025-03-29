@@ -10,7 +10,7 @@ const WorkGalleryItem = ({
    }: { 
       title: string; content: string; images: string[]; location: string; date: string;
    }) => {
-   // const images = privateArchitecture[0].images;
+   
    const [currentIndex, setCurrentIndex] = useState(0)
 
    useEffect(() => {
@@ -46,13 +46,16 @@ const WorkGalleryItem = ({
             </div>
     <div className={styles["carousel-gallery"]}>
       {images.map((image, index) => ( 
-         <img 
+         <Image 
             className={styles["carousel-gallery__img"]}
             key={index}
             src={image}
             alt={image}
+            width={2000}
+            height={1000}
             style={{
-               opacity: index === currentIndex ? 1 : 0
+               opacity: index === currentIndex ? 1 : 0,
+               zIndex: index === currentIndex ? 10 : 0
              }}
          />
       ))}

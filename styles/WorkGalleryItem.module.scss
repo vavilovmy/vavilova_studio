@@ -19,6 +19,7 @@
    .workGallery__item__location {
       display: flex;
       justify-content: center;
+      text-align: center;
       max-width: 200px;
       margin: 0 auto;
       max-height: 30px;
@@ -30,7 +31,9 @@
       }
 
       p {
-         margin-left: 10px;
+         margin-left: 5px;
+         display: inline;
+         text-wrap: nowrap;
       }
    }
 }
@@ -39,7 +42,7 @@
    position: relative;
    width: 75%;
    overflow: hidden;
-   height: 55vh;
+   height: 65vh;
    margin: 45px auto;
    
    
@@ -67,6 +70,7 @@
       border: none;
       top: 50%;
       transform: translateY(-50%);
+      z-index: 11;
 
       &.button--previous {
          left: 10px

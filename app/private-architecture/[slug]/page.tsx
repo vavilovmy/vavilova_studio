@@ -2,7 +2,6 @@ import React from 'react'
 import { notFound } from 'next/navigation'
 import styles from "../../../styles/WorkGalleryItem.module.css"
 import WorkGalleryItem from '@/components/WorkGalleryItem'
-import { useRouter } from 'next/router'
 
 const route = "private-architecture"
 
@@ -18,16 +17,18 @@ export async function generateStaticParams() {
   
 }
 
-export default async function Page({params}: {params: { slug: string }}) {
+export default async function Page({params}: { params: Promise<{ slug: string }> }) {
+
+  const { slug } = await params;
 
   const res = await fetch(
-    `${process.env.WP_API_URL}/${route}?slug=${params.slug}&acf_format=standard&_fields=id,title,acf,slug`
+    `${process.env.WP_API_URL}/${route}?slug=${slug}&acf_format=standard&_fields=id,title,acf,slug`
   );
   const data = await res.json();
   
-  const images = Object.keys(data.acf)
-    .filter((key) => key.startsWith("img") && data.acf[key] && data.acf[key] !== "")
-    .map((key) => data.acf[key]);
+  const images = Object.keys(data[0].acf)
+    .filter((key) => key.startsWith("img") && data[0].acf[key] && data[0].acf[key] !== "")
+    .map((key) => data[0].acf[key]);
   
   if (!data) {
     return notFound();
@@ -36,10 +37,8 @@ export default async function Page({params}: {params: { slug: string }}) {
   return (
     <main>
       <section className={styles.workItemBox}>
-         <h1>${data[0].title.rendered}</h1>
+      <WorkGalleryItem title={data[0].title.rendered} content={data[0].acf.content} images={images} location={data[0].acf.location} date={data[0].acf.year}/>
       </section>
     </main>
   )
 }
-
-// <WorkGalleryItem title={data.title.rendered} content={data.acf.content} images={images} location={data.acf.location} date={data.acf.year}/>

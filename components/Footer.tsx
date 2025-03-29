@@ -20,7 +20,7 @@ const Footer = () => {
    <Link href="#">
          <img width="25px" height="25px" src="/icons/telegram.svg" alt="" />
             </Link>
-            <Link href="#">   
+            <Link href="https://www.instagram.com/vavilovastudio?igsh=MWVjdHB4aWVyb2o0OA%3D%3D&utm_source=qr">   
          <img width="25px" height="25px" src="/icons/insta.svg" alt="" />
             </Link>
             <Link href="https://www.houzz.ru/professionaly/arhitektory/studiya-dizayna-i-arhitektury-olygi-vavilovoy-pfvwru-pf~1327143032?" target='_blank'>    

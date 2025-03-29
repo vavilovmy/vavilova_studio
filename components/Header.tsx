@@ -57,10 +57,10 @@ const Header = () => {
          </nav>
          <nav className={styles["header__nav--mobile"]} style={{transform: `translateX(${activeBurger ? 0 : `-110%`})`}}>
             <ul>
-            <li><Link href="/#main">главная</Link></li>
-            <li><Link href="/#about">обо мне</Link></li>
-            <li><Link href="/#interiors">интерьеры</Link></li>
-            <li><Link href="/#architecture">архитектура</Link></li>
+            <li><Link href="/#main" onClick={handleBurgerClick}>главная</Link></li>
+            <li><Link href="/#about" onClick={handleBurgerClick}>обо мне</Link></li>
+            <li><Link href="/#interiors" onClick={handleBurgerClick}>интерьеры</Link></li>
+            <li><Link href="/#architecture" onClick={handleBurgerClick}>архитектура</Link></li>
             </ul>
          </nav>
       <div className={styles.header__socials}
@@ -70,7 +70,7 @@ const Header = () => {
             <Link href="#">
          <img width="25px" height="25px" src="/icons/telegram.svg" alt="" />
             </Link>
-            <Link href="#">   
+            <Link href="https://www.instagram.com/vavilovastudio?igsh=MWVjdHB4aWVyb2o0OA%3D%3D&utm_source=qr ">   
          <img width="25px" height="25px" src="/icons/insta.svg" alt="" />
             </Link>
             <Link href="https://www.houzz.ru/professionaly/arhitektory/studiya-dizayna-i-arhitektury-olygi-vavilovoy-pfvwru-pf~1327143032?" target='_blank'>    

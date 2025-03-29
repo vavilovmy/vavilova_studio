@@ -1,7 +1,7 @@
 import React from 'react'
-import { privateArchitecture } from '@/data'
 import styles from "../styles/WorkGallery.module.css"
 import Link from 'next/link'
+import Image from 'next/image';
 
 // 408 x 306
 
@@ -14,8 +14,6 @@ export default async function WorkGalleryNew(
    );
    const data = await res.json();
    console.log(data)
-   
-   const items = privateArchitecture;
 
    type ResponseData = {
       id: number;
@@ -27,15 +25,15 @@ export default async function WorkGalleryNew(
          location: string;
          previewImg: string;
          img1: string;
-         img2: string;
-         img3: string;
-         img4: string;
-         img5: string;
-         img6: string;
-         img7: string;
-         img8: string;
-         img9: string;
-         img10: string;
+         img2: string | boolean;
+         img3: string | boolean;
+         img4: string | boolean;
+         img5: string | boolean;
+         img6: string | boolean
+         img7: string | boolean;
+         img8: string | boolean;
+         img9: string | boolean;
+         img10: string | boolean;
       }
    }
 
@@ -49,13 +47,14 @@ export default async function WorkGalleryNew(
       {data.map((item: ResponseData) => (
          <div key={item.id} 
          className={`${styles["workGallery__item"]}`}>
-            <img 
+            <Image 
                src={item.acf.previewImg}
                alt={item.title.rendered}
+               width={1000}
+               height={1000}
             />
             <div className={styles.workGallery__item__textbox}>
                <h2>{item.title.rendered}</h2>
-               {/* ЗДЕСЬ ДОБАВИТЬ ВМЕСТО TEST ${route} ДЛЯ МАРШРУТИЗАЦИИ */}
                <p><Link href={`/${route}/${item.slug}`}>подробнее</Link></p> 
             </div>
          </div>

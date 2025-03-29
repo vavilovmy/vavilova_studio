@@ -131,6 +131,7 @@
 
  @media screen and (max-width: 1200px) {
    .header {
+      z-index: 15;
       justify-content: center;
       .header__nav--desktop {
          display: none;
