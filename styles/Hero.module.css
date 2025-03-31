@@ -3,6 +3,7 @@
   text-align: center;
   margin-bottom: 25px;
   background-color: var(--background-color);
+  border-top: 1px solid gray;
 }
 .hero__wrapper {
   max-width: 1506px;
@@ -15,6 +16,8 @@
 }
 .hero h1 {
   font-size: 46px;
+  font-weight: 400;
+  max-width: 1200px;
 }
 .hero__first-part {
   display: flex;
@@ -56,6 +59,10 @@
   }
   .hero {
     margin-top: 0;
+  }
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 400;
   }
   .hero__second-part {
     max-width: 600px;

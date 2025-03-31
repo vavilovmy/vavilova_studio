@@ -15,8 +15,7 @@ const Interiors = () => {
             src="/images/private-interiors.jpg"
          />
       <div className={styles['interiors__private__text']}>
-         <h2>Интерьеры</h2>
-         <p>Частные</p>
+         <h2>Интерьеры частные</h2> 
          <p><Link href="/private-interiors">подробнее</Link></p>
       </div>
       </div>
@@ -28,8 +27,7 @@ const Interiors = () => {
             src="/images/public-interiors.jpg"
          />
          <div className={styles['interiors__public__text']}>
-         <h2>Интерьеры</h2>
-         <p>Общественные</p>
+         <h2>Интерьеры общественные</h2>
          <p><Link href="/public-interiors">подробнее</Link></p>
       </div>
       </div>

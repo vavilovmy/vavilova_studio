@@ -24,6 +24,8 @@
 }
 .interiors h2 {
   font-size: 20px;
+  text-wrap: nowrap;
+  margin-bottom: 0;
 }
 .interiors a {
   text-decoration: none;
@@ -37,6 +39,7 @@
 .interiors__private {
   position: relative;
   transition: box-shadow 0.2s ease-in-out;
+  border: 1px solid gray;
 }
 .interiors__private__text {
   position: absolute;
@@ -60,6 +63,7 @@
 .interiors__public {
   position: relative;
   transition: box-shadow 0.2s ease-in-out;
+  border: 1px solid gray;
 }
 .interiors__public__text {
   position: absolute;

@@ -45,7 +45,8 @@ export default async function WorkGalleryNew(
       
     <div className={styles.galleryWrapper}>
       {data.map((item: ResponseData) => (
-         <div key={item.id} 
+         <Link key={item.id} href={`/${route}/${item.slug}`}>
+         <div 
          className={`${styles["workGallery__item"]}`}>
             <Image 
                src={item.acf.previewImg}
@@ -55,9 +56,10 @@ export default async function WorkGalleryNew(
             />
             <div className={styles.workGallery__item__textbox}>
                <h2>{item.title.rendered}</h2>
-               <p><Link href={`/${route}/${item.slug}`}>подробнее</Link></p> 
+               
             </div>
          </div>
+         </Link>
         
       ))}
     </div>

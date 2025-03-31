@@ -15,8 +15,7 @@ const Architecure = () => {
             src="/images/private-architecture.jpg"
          />
       <div className={styles['architecture__private__text']}>
-         <h2>Архитектура</h2>
-         <p>Частная</p>
+         <h2>Архитектура частная</h2>
          <p><Link href="/private-architecture">подробнее</Link></p>
       </div>
       </div>
@@ -28,8 +27,7 @@ const Architecure = () => {
             src="/images/public-architecture.jpg"
          />
          <div className={styles['architecture__public__text']}>
-         <h2>Архитектура</h2>
-         <p>Общественная</p>
+         <h2>Архитектура общественная</h2>
          <p><Link href="/public-architecture">подробнее</Link></p>
       </div>
       </div>

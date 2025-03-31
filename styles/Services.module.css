@@ -1,0 +1,45 @@
+.services {
+  max-width: 1560px;
+  margin: 55px auto;
+  padding: 0 10px;
+}
+.services h3 {
+  display: block;
+  font-weight: 400;
+  cursor: pointer;
+}
+.services .visible {
+  display: block;
+  transition: display 0.3s ease;
+}
+.services .hidden {
+  display: none;
+}
+.services p {
+  color: gray;
+  margin-top: 0;
+}
+.services .services__list {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+.services .services__list__item {
+  border-bottom: 1px solid gray;
+}
+.services .services__list__item__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  cursor: pointer;
+}
+.services .services__list__item__heading img {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+.services .services__list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=Services.module.css.map */

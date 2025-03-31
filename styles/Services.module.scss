@@ -1,0 +1,54 @@
+.services {
+   max-width: 1560px;
+   margin: 55px auto;
+   padding: 0 10px;
+
+   h3 {
+      display: block;
+      font-weight: 400;
+      cursor: pointer;
+      
+   }
+
+   .visible {
+      display: block;
+      transition: display 0.3s ease;
+    }
+    
+    .hidden {
+      display: none;
+    }
+
+   p {
+      color: gray;
+      margin-top: 0;
+   }
+
+   .services__list {
+      margin: 0 auto;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+         border-bottom: 1px solid gray;
+         &__heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            cursor: pointer;
+
+            img {
+               transition: transform 0.3s ease-in-out;
+               transform: rotate(0deg);
+            }
+         }
+      }
+
+      ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+      }
+   }
+}

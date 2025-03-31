@@ -36,42 +36,70 @@ const Header = () => {
          }
          onClick={handleBurgerClick}
          >
-            {/* <Image src="/icons/burger-menu.svg" width={65} height={65} alt='burger-menu'/>
-            <div className={styles.header__burger__background}></div> */}
             <div className={styles.header__burger__bar}></div>
             <div className={styles.header__burger__bar}></div>
             <div className={styles.header__burger__bar}></div>
          </div>
       <Link href="/">
-      <div>
-         <h1>ОЛЬГА ВАВИЛОВА</h1>
-         <p>архитектор</p>
+      <div className={styles.header__logo__container}>
+         <Image 
+            className={styles.header__logo}
+            src="/icons/vavilovaog.svg"
+            alt=""
+            width={250}
+            height={25}
+         />
+         <p className={styles.header__logo__text}>студия дизайна и архитектуры</p>
       </div>
       </Link>
          <nav className={styles["header__nav--desktop"]}>
          <ul>
-            <li><Link href="/#main">главная</Link></li>
             <li><Link href="/#about">обо мне</Link></li>
             <li><Link href="/#interiors">интерьеры</Link></li>
             <li><Link href="/#architecture">архитектура</Link></li>
-            </ul>
+            <li><Link href="/#furniture">мебель</Link></li>
+         </ul>
          </nav>
          <nav className={styles["header__nav--mobile"]} style={{transform: `translateX(${activeBurger ? 0 : `-110%`})`}}>
             <ul>
-            <li><Link href="/#main" onClick={handleBurgerClick}>главная</Link></li>
-            <li><Link href="/#about" onClick={handleBurgerClick}>обо мне</Link></li>
-            <li><Link href="/#interiors" onClick={handleBurgerClick}>интерьеры</Link></li>
-            <li><Link href="/#architecture" onClick={handleBurgerClick}>архитектура</Link></li>
+               <li>
+                  <Link 
+                     href="/#about" 
+                     onClick={handleBurgerClick}>
+                        обо мне
+                  </Link>
+               </li>
+               <li>
+                  <Link 
+                     href="/#interiors" 
+                     onClick={handleBurgerClick}>
+                        интерьеры
+                  </Link>
+               </li>
+               <li>
+                  <Link 
+                     href="/#architecture" 
+                     onClick={handleBurgerClick}>
+                        архитектура
+                  </Link>
+               </li>
+               <li>
+                  <Link 
+                     href="/#furniture" 
+                     onClick={handleBurgerClick}>
+                        мебель
+                  </Link>
+               </li>
             </ul>
          </nav>
       <div className={styles.header__socials}
        style={{transform: `translateX(${activeBurger ? 0 : `-110%`})`}}>
-         <h2 className='tel'>8 (963) 463-30-30</h2>
+         <h2>8 (963) 463-30-30</h2>
          <div className={styles.header__socials__images}>
-            <Link href="#">
+            <Link href="https://t.me/vavilovastudio" target='_blank'>
               <Image width={25} height={25} src="/icons/telegram.svg" alt="" />
             </Link>
-            <Link href="https://www.instagram.com/vavilovastudio?igsh=MWVjdHB4aWVyb2o0OA%3D%3D&utm_source=qr ">   
+            <Link href="https://www.instagram.com/vavilovastudio?igsh=MWVjdHB4aWVyb2o0OA%3D%3D&utm_source=qr" target='_blank'>   
                 <Image width={25} height={25} src="/icons/insta.svg" alt="" />
             </Link>
             <Link href="https://www.houzz.ru/professionaly/arhitektory/studiya-dizayna-i-arhitektury-olygi-vavilovoy-pfvwru-pf~1327143032?" target='_blank'>    

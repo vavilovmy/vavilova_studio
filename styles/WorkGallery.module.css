@@ -49,6 +49,7 @@
   color: var(--foreground);
   transform: translateY(10px);
   width: 350px;
+  text-wrap: nowrap;
 }
 .workGallery__item a {
   color: var(--foreground);
@@ -62,7 +63,7 @@
 }
 .workGallery__item__textbox {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
