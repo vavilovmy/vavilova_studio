@@ -4,6 +4,8 @@ import React from 'react'
 import styles from "../styles/WorkGalleryItem.module.css"
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import he from 'he'
+
 
 const WorkGalleryItem = ({
     title, content, images, location, date 
@@ -32,7 +34,7 @@ const WorkGalleryItem = ({
 
   return (
    <section className={styles.workItem}>
-      <h1>{title}</h1>
+      <h1>{he.decode(title)}</h1>
       <div className={styles.workGallery__item__location}>
             <Image 
             src="/icons/location-black.svg"

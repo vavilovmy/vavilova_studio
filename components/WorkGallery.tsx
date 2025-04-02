@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../styles/WorkGallery.module.css"
 import Link from 'next/link'
 import Image from 'next/image';
+import he from 'he'
 
 // 408 x 306
 
@@ -13,7 +14,7 @@ export default async function WorkGalleryNew(
       `${process.env.WP_API_URL}/${route}?&acf_format=standard&_fields=id,title,acf,slug`
    );
    const data = await res.json();
-   console.log(data)
+   const post = data.sort((a: ResponseData, b:ResponseData) => Number(b.acf.year) - Number(a.acf.year))
 
    type ResponseData = {
       id: number;
@@ -55,7 +56,7 @@ export default async function WorkGalleryNew(
                height={1000}
             />
             <div className={styles.workGallery__item__textbox}>
-               <h2>{item.title.rendered}</h2>
+               <h2>{he.decode(item.title.rendered)}</h2>
                
             </div>
          </div>
