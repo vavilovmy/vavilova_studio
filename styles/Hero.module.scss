@@ -5,8 +5,8 @@
    background-color: var(--background-color);
    border-top: 1px solid gray;
    // margin-top: 75vh; // scroll-effect
-//   z-index: 2; // scroll-effect 
-//    width: 100%; // scroll-effect-related
+   // z-index: 2; // scroll-effect 
+   // width: 100%; // scroll-effect-related
 
    &__wrapper {
       max-width: 1506px;
@@ -19,8 +19,8 @@
    }
 
    h1 {
-      font-size: 46px;
-      font-weight: 400;
+      font-size: 32px;
+      font-weight: 500;
       max-width: 1200px;
    }
 
@@ -30,14 +30,18 @@
      gap: 105px;
      
      &__text-container {
-      text-align: justify;
-      max-width: 600px;
+      text-align: left;
+      max-width: 500px;
+      font-size: 18px;
      }
 
      &__image-container {
+      margin-top: 10px;
       overflow: hidden;
       box-shadow: 5px 5px 15px 0 black;
       transition: scale 0.3s ease-out;
+      max-width: 350px;
+      height: 360px;
 
          &:hover {
             scale: 1.02;

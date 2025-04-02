@@ -1,4 +1,4 @@
-.architecture {
+.furniture {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -8,46 +8,46 @@
   margin-bottom: 55px;
   padding: 0 10px;
 }
-.architecture img {
+.furniture img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
   width: 1530px;
-  height: 515px;
+  height: 715px;
 }
-.architecture h2, .architecture p, .architecture a {
+.furniture h2, .furniture p, .furniture a {
   color: white;
   line-height: 14px;
 }
-.architecture h2 {
+.furniture h2 {
   font-size: 20px;
   text-wrap: nowrap;
 }
-.architecture a {
+.furniture a {
   text-decoration: none;
   border-bottom: 2px solid white;
   transition: color 0.2s ease-in, border-bottom-color 0.2s ease-in;
 }
-.architecture a:hover {
+.furniture a:hover {
   color: var(--accent-color);
   border-bottom-color: var(--accent-color);
 }
-.architecture__private {
+.furniture__private {
   position: relative;
   transition: box-shadow 0.2s ease-in-out;
   margin-bottom: 50px;
   border: 1px solid gray;
 }
-.architecture__private__text {
+.furniture__private__text {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 }
-.architecture__private::after {
+.furniture__private::after {
   content: "";
   position: absolute;
   top: 0;
@@ -56,26 +56,26 @@
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 50%);
 }
-.architecture__private:hover {
+.furniture__private:hover {
   box-shadow: 0px 0px 35px var(--accent-color);
 }
 
 @media screen and (max-width: 1536px) {
-  .architecture img {
+  .furniture img {
     width: 1190px;
     height: 425px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .architecture {
+  .furniture {
     flex-direction: column;
     align-items: center;
   }
-  .architecture img {
+  .furniture img {
     width: 95vw;
     height: 405px;
   }
-  .architecture__private {
+  .furniture__private {
     width: 95vw;
     height: 405px;
     margin-bottom: 0;

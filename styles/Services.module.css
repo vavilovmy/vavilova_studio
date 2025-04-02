@@ -1,12 +1,18 @@
 .services {
   max-width: 1560px;
-  margin: 55px auto;
+  margin: 55px auto 55px auto;
   padding: 0 10px;
+}
+.services h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 32px;
 }
 .services h3 {
   display: block;
   font-weight: 400;
   cursor: pointer;
+  font-size: 22px;
 }
 .services .visible {
   display: block;
@@ -18,6 +24,7 @@
 .services p {
   color: gray;
   margin-top: 0;
+  font-size: 18px;
 }
 .services .services__list {
   margin: 0 auto;

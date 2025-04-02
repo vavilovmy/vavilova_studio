@@ -10,8 +10,6 @@
    // z-index: 2; // scroll-effect
  }
 
- 
-
  .header {
    width: 1200px;
    background-color: #dddddd;
@@ -40,11 +38,10 @@
     }
 
    nav {
-      font-size: 22px;
+      font-size: 18px;
       margin-right: 20px;
    }
    
-
    ul {
       list-style: none;
       display: flex;
@@ -53,13 +50,9 @@
    }
 
    h2 {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 400;
       margin: 0;
-   }
-
-   .header__logo__container {
-      
    }
 
    .header__logo__text {
@@ -72,9 +65,13 @@
       font-weight: 500;
       max-width: 370px;
       text-align: center;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 18px;
       padding: 0 3px 2px 3px;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+         color: #dddddd;
+      }
    }
 
    .header__burger {

@@ -6,15 +6,15 @@ import Image from 'next/image'
 
 const Furniture = () => {
   return (
-    <section id="furniture" className={styles.architecture}>
-      <div className={styles["architecture__private"]}>
+    <section id="furniture" className={styles.furniture}>
+      <div className={styles["furniture__private"]}>
          <Image
-            width={1000}
-            height={1000}
+            width={2000}
+            height={1500}
             alt='privArch'
-            src="/images/furniture.jpg"
+            src="/images/furniture.png"
          />
-      <div className={styles['architecture__private__text']}>
+      <div className={styles['furniture__private__text']}>
          <h2>Мебель</h2>
          <p><Link href="/furniture">подробнее</Link></p>
       </div>

@@ -15,8 +15,8 @@
   margin-right: auto;
 }
 .hero h1 {
-  font-size: 46px;
-  font-weight: 400;
+  font-size: 32px;
+  font-weight: 500;
   max-width: 1200px;
 }
 .hero__first-part {
@@ -25,13 +25,17 @@
   gap: 105px;
 }
 .hero__first-part__text-container {
-  text-align: justify;
-  max-width: 600px;
+  text-align: left;
+  max-width: 500px;
+  font-size: 18px;
 }
 .hero__first-part__image-container {
+  margin-top: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 15px 0 black;
   transition: scale 0.3s ease-out;
+  max-width: 350px;
+  height: 360px;
 }
 .hero__first-part__image-container:hover {
   scale: 1.02;
