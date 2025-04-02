@@ -15,6 +15,7 @@ export default async function WorkGalleryNew(
    );
    const data = await res.json();
    const post = data.sort((a: ResponseData, b:ResponseData) => Number(b.acf.year) - Number(a.acf.year))
+   
 
    type ResponseData = {
       id: number;
@@ -45,7 +46,7 @@ export default async function WorkGalleryNew(
       </h1>
       
     <div className={styles.galleryWrapper}>
-      {data.map((item: ResponseData) => (
+      {post.map((item: ResponseData) => (
          <Link key={item.id} href={`/${route}/${item.slug}`}>
          <div 
          className={`${styles["workGallery__item"]}`}>
