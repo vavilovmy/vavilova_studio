@@ -4,14 +4,17 @@ import Link from 'next/link'
 import Image from 'next/image';
 import he from 'he'
 
+
 // 408 x 306
+export const dynamicParams = true;
 
 export default async function WorkGalleryNew(
    { title, route }: 
    { title: string; route: string }
 ) {
    const res = await fetch(
-      `${process.env.WP_API_URL}/${route}?&acf_format=standard&_fields=id,title,acf,slug`
+      `${process.env.WP_API_URL}/${route}?&acf_format=standard&_fields=id,title,acf,slug`,
+      { next: { revalidate: 60 } }
    );
    const data = await res.json();
    const post = data.sort((a: ResponseData, b:ResponseData) => Number(b.acf.year) - Number(a.acf.year))

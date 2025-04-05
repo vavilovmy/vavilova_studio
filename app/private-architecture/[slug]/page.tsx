@@ -3,11 +3,13 @@ import { notFound } from 'next/navigation'
 import styles from "../../../styles/WorkGalleryItem.module.css"
 import WorkGalleryItem from '@/components/WorkGalleryItem'
 
+export const dynamicParams = true;
 const route = "private-architecture"
 
 export async function generateStaticParams() {
   const res = await fetch(
-    `${process.env.WP_API_URL}/${route}?&acf_format=standard&_fields=id,title,acf,slug`
+    `${process.env.WP_API_URL}/${route}?&acf_format=standard&_fields=id,title,acf,slug`,
+    { next: { revalidate: 60 } } 
   );
   const data = await res.json();
 
@@ -22,7 +24,8 @@ export default async function Page({params}: { params: Promise<{ slug: string }>
   const { slug } = await params;
 
   const res = await fetch(
-    `${process.env.WP_API_URL}/${route}?slug=${slug}&acf_format=standard&_fields=id,title,acf,slug`
+    `${process.env.WP_API_URL}/${route}?slug=${slug}&acf_format=standard&_fields=id,title,acf,slug`,
+    { next: { revalidate: 60 } } 
   );
   const data = await res.json();
   
