@@ -16,10 +16,11 @@
       align-items: center;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 55px;
    }
 
    h1 {
-      font-size: 32px;
+      font-size: 25px;
       font-weight: 500;
       max-width: 1200px;
    }
@@ -41,7 +42,7 @@
       box-shadow: 5px 5px 15px 0 black;
       transition: scale 0.3s ease-out;
       max-width: 350px;
-      height: 360px;
+      height: 330px;
 
          &:hover {
             scale: 1.02;
