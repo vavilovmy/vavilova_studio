@@ -12,7 +12,7 @@ const Interiors = () => {
             width={1000}
             height={1000} 
             alt="privInt"
-            src="/images/private-interiors.jpg"
+            src="/images/carousel5.jpg"
          />
       <div className={styles['interiors__private__text']}>
          <h2>Интерьеры частные</h2> 
@@ -24,7 +24,7 @@ const Interiors = () => {
             width={1000}
             height={1000}
             alt="pubInt" 
-            src="/images/public-interiors.jpg"
+            src="/images/carousel2.jpg"
          />
          <div className={styles['interiors__public__text']}>
          <h2>Интерьеры общественные</h2>

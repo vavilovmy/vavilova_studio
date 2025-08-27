@@ -9,6 +9,7 @@ const CarouselGallery = () => {
       "/images/carousel1.jpg",
       "/images/carousel2.jpg",
       "/images/carousel3.png",
+      "/images/carouselNEW.png",
       "/images/carousel4.jpg",
       "/images/carousel5.jpg",
       "/images/carousel6.jpg"

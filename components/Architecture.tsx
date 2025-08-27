@@ -12,7 +12,7 @@ const Architecure = () => {
             width={1000}
             height={1000}
             alt='privArch'
-            src="/images/private-architecture.jpg"
+            src="/images/pva.jpg"
          />
       <div className={styles['architecture__private__text']}>
          <h2>Архитектура частная</h2>
@@ -24,7 +24,7 @@ const Architecure = () => {
             width={1000}
             height={1000}
             alt='pubArch'
-            src="/images/public-architecture.jpg"
+            src="/images/pba.webp"
          />
          <div className={styles['architecture__public__text']}>
          <h2>Архитектура общественная</h2>

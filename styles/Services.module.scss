@@ -39,6 +39,7 @@
 
       &__item {
          border-bottom: 1px solid gray;
+         white-space: pre-line;
          &__heading {
             display: flex;
             justify-content: space-between;
